@@ -12,7 +12,7 @@ RUN \
   sudo
 
 RUN \
-  echo "root:Ww12345!" | chpasswd && \
+  echo "root:password" | chpasswd && \
   echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 EXPOSE 22
