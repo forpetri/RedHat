@@ -1,0 +1,14 @@
+---
+version: "3.8"
+
+services:
+  redhat:
+    # image: centos
+    build: .
+    privileged: true
+    tty: true
+    stdin_open: true
+    user: '0'
+    volumes:
+      - ./res:/data
+    command: /bin/bash
